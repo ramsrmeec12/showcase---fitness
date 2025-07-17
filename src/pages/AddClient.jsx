@@ -29,14 +29,14 @@ export default function AddClient() {
   const sendEmail = async () => {
     try {
       await emailjs.send(
-        "service_qlw4qwm",           // ✅ Updated service ID
-        "template_aka75xb",         // ✅ Updated template ID
+        "service_cw04z5y",           // ✅ Updated service ID
+        "template_o3i5cuu",         // ✅ Updated template ID
         {
           name: formData.name,
           email: formData.email,
           password: formData.password,
         },
-        "2qTeKZKnsrHZPZJCc"          // ✅ Updated public key
+        "q8wljWrJUBah3yw32"          // ✅ Updated public key
       );
       console.log("✅ Email sent");
     } catch (error) {
